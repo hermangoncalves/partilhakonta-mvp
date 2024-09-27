@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="bg-primary-500">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">PartilhaKonta</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white bg-primary-500 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END NavBar -->
+    <main>
+        <nav class="flex my-4 px-2" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                <li class="inline-flex items-center">
+                    <a href="#"
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <a href="#"
+                            class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Pagemento</a>
+                    </div>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span
+                            class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Comprovativo</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+        <!-- End breadcrumbs -->
+
+        <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+            <div class="mx-auto max-w-2xl px-4 2xl:px-0">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl mb-2">Realizar pagamento</h2>
+                <p class="text-gray-500 dark:text-gray-400 mb-6 md:mb-8">Por favor, prossiga com o pagamento via
+                    transferência
+                    bancária utilizando os detalhes fornecidos abaixo. Seu pedido será processado após a confirmação do
+                    pagamento.</p>
+
+                <!-- Informações do Banco -->
+                <div
+                    class="space-y-4 sm:space-y-2 rounded-lg border border-gray-100 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800 mb-6 md:mb-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Detalhes de Depósito Bancário
+                    </h3>
+                    <div>
+                        <label for="bank" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Escolha o
+                            banco</label>
+                        <select id="bank" onchange="updateBankInfo()"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option value="">Escolha o banco</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BCN">BCN</option>
+                            <option value="CAIXA">CAIXA</option>
+                            <option value="BAI">BAI</option>
+                        </select>
+                    </div>
+                    <dl class="sm:flex items-center justify-between gap-4">
+                        <dt class="font-normal mb-1 sm:mb-0 text-gray-500 dark:text-gray-400">Nome do Banco</dt>
+                        <dd id="bank-name" class="font-medium text-gray-900 dark:text-white sm:text-end">Selecione um banco</dd>
+                    </dl>
+                    <dl class="sm:flex items-center justify-between gap-4">
+                        <dt class="font-normal mb-1 sm:mb-0 text-gray-500 dark:text-gray-400">Nome do Titular da Conta
+                        </dt>
+                        <dd id="account-name" class="font-medium text-gray-900 dark:text-white sm:text-end">-</dd>
+                    </dl>
+                    <dl class="sm:flex items-center justify-between gap-4">
+                        <dt class="font-normal mb-1 sm:mb-0 text-gray-500 dark:text-gray-400">Número da Conta</dt>
+                        <dd id="account-number" class="font-medium text-gray-900 dark:text-white sm:text-end">-</dd>
+                    </dl>
+                    <dl class="sm:flex items-center justify-between gap-4">
+                        <dt class="font-normal mb-1 sm:mb-0 text-gray-500 dark:text-gray-400">Número do NIB</dt>
+                        <dd id="nib-number" class="font-medium text-gray-900 dark:text-white sm:text-end">-</dd>
+                    </dl>
+                </div>
+
+                <!-- Instruções e Upload de Comprovativo -->
+                <p class="text-gray-500 dark:text-gray-400 mb-6">Por favor, faça o upload do comprovativo de depósito
+                    após
+                    realizar a transferência para que possamos processar seu pedido.</p>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2 dark:text-gray-400" for="comprovativo">
+                        Carregar Comprovativo de Depósito:
+                    </label>
+                    <input id="comprovativo" type="file" accept="image/*,.pdf"
+                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600">
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <a href="#"
+                        class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Enviar
+                        Comprovativo</a>
+                    <a href="/"
+                        class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Voltar
+                        às Compras</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div>
+                <svg data-v-714e6ade="" class="text-primary-500" preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none"
+                    version="1.1" viewBox="0 0 1920 30.000000000000234">
+                    <g data-v-714e6ade=""
+                        transform="matrix(-1,-1.2246468525851679e-16,1.2246468525851679e-16,-1,3840,60.0000000000007)">
+                        <path data-v-714e6ade=""
+                            d="M1920,30.000000000000234C1920,30.000000000000234,3840,30.000000000000234,3840,30.000000000000234C3840,30.000000000000234,3840,60.000000000000234,3840,60.000000000000234C3840,60.000000000000234,3416.5,30.000000000000234,2881.5,30.000000000000234C2346.5,30.000000000000234,1920,60.000000000000234,1920,60.000000000000234C1920,60.000000000000234,1920,30.000000000000234,1920,30.000000000000234Z"
+                            fill-rule="evenodd" fill="currentColor" fill-opacity="1"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="p-4 bg-primary-500 md:p-8 lg:p-10 text-white">
+                <div class="mx-auto max-w-screen-xl text-center">
+                    <a href="#" class="flex justify-center items-center text-2xl font-semibold text-white">
+                        PartilhaKonta
+                    </a>
+                    <p class="my-6 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-sm text-white sm:text-center">© 2024 <a href="#"
+                                class="hover:underline">PartilhaKonta</a>.</span>
+                        <span class="text-sm text-white sm:text-center">Made with ❤️ by Herman Gonçalves</a>.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script>
+        const bankData = {
+          BCA: {
+            name: 'BCA',
+            accountName: 'Herman Jorge Melo Gonçalves',
+            accountNumber: '123456789',
+            nibNumber: '000100100010123456789',
+          },
+          BCN: {
+            name: 'BCN',
+            accountName: 'Maria Fernandes',
+            accountNumber: '987654321',
+            nibNumber: '000200200020987654321',
+          },
+          CAIXA: {
+            name: 'CAIXA',
+            accountName: 'Carlos Sousa',
+            accountNumber: '112233445',
+            nibNumber: '000300300030112233445',
+          },
+          BAI: {
+            name: 'BAI',
+            accountName: 'Ana Costa',
+            accountNumber: '556677889',
+            nibNumber: '000400400040556677889',
+          },
+        };
+    
+        console.log(bankData)
+      
+        function updateBankInfo() {
+          const selectedBank = document.getElementById('bank').value;
+          console.log(bankData)
+          if (selectedBank && bankData[selectedBank]) {
+            document.getElementById('bank-name').textContent = bankData[selectedBank].name;
+            document.getElementById('account-name').textContent = bankData[selectedBank].accountName;
+            document.getElementById('account-number').textContent = bankData[selectedBank].accountNumber;
+            document.getElementById('nib-number').textContent = bankData[selectedBank].nibNumber;
+          } else {
+            document.getElementById('bank-name').textContent = 'Selecione um banco';
+            document.getElementById('account-name').textContent = '-';
+            document.getElementById('account-number').textContent = '-';
+            document.getElementById('nib-number').textContent = '-';
+          }
+        }
+      </script>
+</body>
+
+</html>

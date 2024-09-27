@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="bg-primary-500">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">PartilhaKonta</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden "
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white bg-primary-500 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END NavBar -->
+    <main>
+        <nav class="flex my-4 px-2" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                <li class="inline-flex items-center">
+                    <a href="#"
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                        Início
+                    </a>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <a href="#"
+                            class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white">Assinaturas</a>
+                    </div>
+                </li>
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Streaming</span>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+        <!-- End breadcrumbs -->
+
+        <section class="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased px-2">
+            <div class="p-2">
+                <div class="h-[120px] w-full mb-4 relative">
+                    <a href="#">
+                        <img class="mx-auto h-full"
+                            src="https://static.gamsgocdn.com/image/d10d93a9143071f34acf05007b4ef842.webp" alt="" />
+                    </a>
+                </div>
+                <div class="pt-6">
+                    <a href="{% url 'subscriptions:details' %}"
+                        class="text-lg font-semibold leading-tight text-gray-900 hover:underline dark:text-white">
+                        NETFLIX 4K ULTRA HD 30 DIAS | 1 TELA COM PIN
+                    </a>
+                    <div class="mt-6">
+                        <ul class="flex flex-col gap-2">
+                            <li class="flex itemas-center gap-2">
+                                <div class="flex items-center border border-gray-300 p-2 rounded-md">
+                                    <svg class="w-7 h-7 text-primary-500" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 -960 960 960" fill="currentColor">
+                                        <path
+                                            d="M480-120 80-600l120-240h560l120 240-400 480Zm-95-520h190l-60-120h-70l-60 120Zm55 347v-267H218l222 267Zm80 0 222-267H520v267Zm144-347h106l-60-120H604l60 120Zm-474 0h106l60-120H250l-60 120Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-gray-500 text-sm">Plano</span>
+                                    <span class="text-sm">Prêmio</span>
+                                </div>
+                            </li>
+                            <li class="flex itemas-center gap-2">
+                                <div class="flex items-center border border-gray-300 p-2 rounded-md">
+                                    <svg class="w-7 h-7 text-primary-500" xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="M314-115q-104-48-169-145T80-479q0-26 2.5-51t8.5-49l-46 27-40-69 191-110 110 190-70 40-54-94q-11 27-16.5 56t-5.5 60q0 97 53 176.5T354-185l-40 70Zm306-485v-80h109q-46-57-111-88.5T480-800q-55 0-104 17t-90 48l-40-70q50-35 109-55t125-20q79 0 151 29.5T760-765v-55h80v220H620ZM594 0 403-110l110-190 69 40-57 98q118-17 196.5-107T800-480q0-11-.5-20.5T797-520h81q1 10 1.5 19.5t.5 20.5q0 135-80.5 241.5T590-95l44 26-40 69Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-gray-500 text-sm">É renovável?</span>
+                                    <span class="text-sm">Sim</span>
+                                </div>
+                            </li>
+                            <li class="flex itemas-center gap-2">
+                                <div class="flex items-center border border-gray-300 p-2 rounded-md">
+                                    <svg class="w-7 h-7 text-primary-500" xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="m380-300 280-180-280-180v360ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-gray-500 text-sm">Dispositivos suportados</span>
+                                    <span class="text-sm">PC, Mobile, Pad, Mac, iPhone</span>
+                                </div>
+                            </li>
+                            <li class="flex itemas-center gap-2">
+                                <div class="flex items-center border border-gray-300 p-2 rounded-md">
+                                    <svg class="w-7 h-7 text-primary-500" xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                        <path
+                                            d="M280-400q-33 0-56.5-23.5T200-480q0-33 23.5-56.5T280-560q33 0 56.5 23.5T360-480q0 33-23.5 56.5T280-400Zm0 160q-100 0-170-70T40-480q0-100 70-170t170-70q67 0 121.5 33t86.5 87h352l120 120-180 180-80-60-80 60-85-60h-47q-32 54-86.5 87T280-240Zm0-80q56 0 98.5-34t56.5-86h125l58 41 82-61 71 55 75-75-40-40H435q-14-52-56.5-86T280-640q-66 0-113 47t-47 113q0 66 47 113t113 47Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-gray-500 text-sm">Tipo de credencial</span>
+                                    <span class="text-sm">Senha</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="mt-2 flex flex-col items-start gap-1">
+                        <li class="flex items-start gap-2">
+                            <svg class="h-4 w-4 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" viewBox="0 -960 960 960" fill="currentColor">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Renove a mesma assinatura
+                                vitalícia
+                            </p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-4 w-4 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" viewBox="0 -960 960 960" fill="currentColor">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">Entrega em tempo real</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="h-4 w-4 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true" viewBox="0 -960 960 960" fill="currentColor">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                            <p class="flex-1 text-sm font-medium text-gray-500 dark:text-gray-400">Suporta apenas Mac,
+                                smartphones e
+                                tablets. Dispositivos de TV, como TV, Xbox e PSN, não são permitidos</p>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4 flex items-center justify-between gap-4">
+                        <p class="text-2xl font-extrabold leading-tight text-primary-500">370 CVE</p>
+
+                        <a href="payment-confirmation.html"
+                            class="inline-flex items-center rounded-lg bg-primary-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-600 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                            <svg class="-ms-2 me-2 h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 4h1.5L8 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm.75-3H7.5M11 7H6.312M17 4v6m-3-3h6" />
+                            </svg>
+                            Compre agora
+                        </a>
+                    </div>
+                    <div class="my-6">
+                        <div class="flex items-center gap-2">
+                            <img class="w-6 h-6 rounded-full"
+                                src="https://avatars.githubusercontent.com/u/169838367?v=4" alt="">
+                            <div class="font-medium dark:text-white">
+                                <span class="text-sm text-gray-600">Herman Gonçalves</span>
+                            </div>
+                        </div>
+                        <ul class="announcement-details mt-4 hidden">
+                            <li>
+                                <div>
+                                    <span>Disponíveis</span>
+                                    <h5>+4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>Vendidos</span>
+                                    <h5>4</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>Vendas</span>
+                                    <h5>4</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h2 class="text-2xl font-semibold text-center text-gray-600">Descrição do Anúncio</h2>
+                        <div class="border border-gray-300 rounded-lg mt-4 p-2">
+                            <div class="text-gray-500 text-sm max-w-prose flex flex-col gap-4">
+                                <h1>NETFLIX 4K ULTRA HD – 30 DIAS | 1 TELA EXCLUSIVA</h1>
+
+                                <h2>DESCRIÇÃO</h2>
+                                <ul>
+                                    <li><strong>Plano Premium 4K Ultra HD</strong>: Acesso completo a todos os conteúdos
+                                        em alta qualidade.</li>
+                                    <li><strong>1 Tela Exclusiva</strong>: Uso exclusivo durante o período de 30 dias.
+                                    </li>
+                                    <li><strong>Conta Privada</strong>: Conta dedicada para garantir privacidade e
+                                        segurança.</li>
+                                    <li><strong>Suporte de 30 Dias</strong>: Assistência completa durante todo o período
+                                        de assinatura.</li>
+                                    <li><strong>Acesso Imediato</strong>: Entrega rápida para você começar a assistir
+                                        sem esperar.</li>
+                                </ul>
+
+                                <h2>REGRAS DE USO</h2>
+                                <ul>
+                                    <li>🔒 <strong>Uso Exclusivo</strong>: A tela é exclusiva para o seu uso. Não
+                                        compartilhe a senha nem permita que outros utilizem sua tela.</li>
+                                    <li>👤 <strong>Perfis</strong>: Utilize o perfil que foi configurado para você. Não
+                                        altere o nome, a imagem ou as configurações do perfil.</li>
+                                    <li>🔑 <strong>Segurança</strong>: Não altere a senha ou qualquer outra configuração
+                                        da conta. Isso garante a estabilidade do serviço para todos os usuários.</li>
+                                    <li>🚫 <strong>Restrições</strong>: Não tente revender ou compartilhar sua conta.
+                                        Isso resultará na perda imediata do suporte e do acesso.</li>
+                                    <li>📵 <strong>Limitações</strong>: Devido às novas políticas da Netflix, existem
+                                        algumas limitações para contas compartilhadas. O serviço pode ser acessado por
+                                        qualquer dispositivo, exceto em televisões.</li>
+                                    <li>📆 <strong>Duração</strong>: O acesso é válido por 30 dias. Próximo ao término
+                                        do período, entraremos em contato para a renovação.</li>
+                                </ul>
+
+                                <h2>SUPORTE E GARANTIA</h2>
+                                <ul>
+                                    <li>📞 <strong>Suporte Completo</strong>: Disponível para resolver quaisquer
+                                        problemas durante o período de assinatura. Qualquer descumprimento das regras
+                                        acima resultará na perda do suporte.</li>
+                                    <li>🔄 <strong>Contas Revisadas Diariamente</strong>: Monitoramos as contas
+                                        regularmente para garantir que tudo funcione perfeitamente.</li>
+                                </ul>
+
+                            </div>
+                            <div class="flex flex-col rounded-lg bg-gray-200 p-2 w-full mt-4">
+                                <p class="text-center text-gray-600">Criado em: 26/09/2024 11:29</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div>
+                <svg data-v-714e6ade="" class="text-primary-500" preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none"
+                    version="1.1" viewBox="0 0 1920 30.000000000000234">
+                    <g data-v-714e6ade=""
+                        transform="matrix(-1,-1.2246468525851679e-16,1.2246468525851679e-16,-1,3840,60.0000000000007)">
+                        <path data-v-714e6ade=""
+                            d="M1920,30.000000000000234C1920,30.000000000000234,3840,30.000000000000234,3840,30.000000000000234C3840,30.000000000000234,3840,60.000000000000234,3840,60.000000000000234C3840,60.000000000000234,3416.5,30.000000000000234,2881.5,30.000000000000234C2346.5,30.000000000000234,1920,60.000000000000234,1920,60.000000000000234C1920,60.000000000000234,1920,30.000000000000234,1920,30.000000000000234Z"
+                            fill-rule="evenodd" fill="currentColor" fill-opacity="1"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="p-4 bg-primary-500 md:p-8 lg:p-10 text-white">
+                <div class="mx-auto max-w-screen-xl text-center">
+                    <a href="#" class="flex justify-center items-center text-2xl font-semibold text-white">
+                        PartilhaKonta
+                    </a>
+                    <p class="my-6 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <div class="flex flex-col gap-2">
+                        <span class="text-sm text-white sm:text-center">© 2024 <a href="#"
+                                class="hover:underline">PartilhaKonta</a>.</span>
+                        <span class="text-sm text-white sm:text-center">Made with ❤️ by Herman Gonçalves</a>.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
