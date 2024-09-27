@@ -90,7 +90,7 @@
         </nav>
         <!-- End breadcrumbs -->
 
-        <section class="bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
+        <section id="payment-confirmation-page" class="hidden bg-white py-8 antialiased dark:bg-gray-900 md:py-16">
             <div class="mx-auto max-w-2xl px-4 2xl:px-0">
                 <h2 class="text-xl font-semibold text-gray-900 dark:text-white sm:text-2xl mb-2">Realizar pagamento</h2>
                 <p class="text-gray-500 dark:text-gray-400 mb-6 md:mb-8">Por favor, prossiga com o pagamento via
@@ -250,9 +250,33 @@
             const orderId = `#NETFLIX${formattedDate}${formattedTime}${randomNum}`;
             document.getElementById('order-id').value = orderId; // Exibe o ID no campo
         }
+    </script>
+    <script>
+        // Função para buscar os dados da API
+        async function fetchSubscription() {
+            try {
+                const response = await fetch('https://sheetdb.io/api/v1/eqo56g4w1ju7y');
+                const data = await response.json();
+                console.log(data)
 
-        // Chama a função para gerar o ID assim que a página é carregada
-        window.onload = generateOrderId;
+                // Verifica se a assinatura está disponível
+                const subscription = data[0]; // Acessa a primeira assinatura
+
+                if (subscription.is_available != "1") {
+                    window.location.href = "index.html";
+                } else {
+                    let paymentConfirmationPageEl = document.getElementById("payment-confirmation-page")
+                    paymentConfirmationPageEl.style.display = "block"
+                    generateOrderId()
+                }
+            } catch (error) {
+                console.error('Erro ao buscar os dados:', error);
+                window.location.href = "index.html";
+            }
+        }
+
+        // Chama a função ao carregar a página
+        window.onload = fetchSubscription;
     </script>
 </body>
 
