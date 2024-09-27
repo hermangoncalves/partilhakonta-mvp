@@ -122,7 +122,6 @@
                             <option value="BCA">BCA</option>
                             <option value="BCN">BCN</option>
                             <option value="CAIXA">CAIXA</option>
-                            <option value="BAI">BAI</option>
                         </select>
                     </div>
                     <dl class="sm:flex items-center justify-between gap-4">
@@ -198,34 +197,25 @@
             BCA: {
                 name: 'BCA',
                 accountName: 'Herman Jorge Melo Gonçalves',
-                accountNumber: '123456789',
-                nibNumber: '000100100010123456789',
+                accountNumber: '8892058010001',
+                nibNumber: '000300008892058010176',
             },
             BCN: {
                 name: 'BCN',
-                accountName: 'Maria Fernandes',
-                accountNumber: '987654321',
-                nibNumber: '000200200020987654321',
+                accountName: 'Herman Jorge Melo Gonçalves',
+                accountNumber: '1005599810001',
+                nibNumber: '000400001005599810187',
             },
             CAIXA: {
                 name: 'CAIXA',
-                accountName: 'Carlos Sousa',
-                accountNumber: '112233445',
-                nibNumber: '000300300030112233445',
-            },
-            BAI: {
-                name: 'BAI',
-                accountName: 'Ana Costa',
-                accountNumber: '556677889',
-                nibNumber: '000400400040556677889',
-            },
+                accountName: 'Élica Gomes Andrade Lopes',
+                accountNumber: '4391214210001',
+                nibNumber: '000200004391214210155',
+            }
         };
-
-        console.log(bankData)
 
         function updateBankInfo() {
             const selectedBank = document.getElementById('bank').value;
-            console.log(bankData)
             if (selectedBank && bankData[selectedBank]) {
                 document.getElementById('bank-name').textContent = bankData[selectedBank].name;
                 document.getElementById('account-name').textContent = bankData[selectedBank].accountName;
@@ -255,7 +245,7 @@
         // Função para buscar os dados da API
         async function fetchSubscription() {
             try {
-                const response = await fetch('https://sheetdb.io/api/v1/eqo56g4w1ju7y');
+                const response = await fetch('https://sheetdb.io/api/v1/8723pupatyube');
                 const data = await response.json();
                 console.log(data)
 
