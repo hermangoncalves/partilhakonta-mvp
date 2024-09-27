@@ -98,6 +98,16 @@
                     bancária utilizando os detalhes fornecidos abaixo. Seu pedido será processado após a confirmação do
                     pagamento.</p>
 
+                <!-- ID do Pedido -->
+                <div class="mb-4">
+                    <label for="order-id" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ID do
+                        Pedido</label>
+                    <input type="text" id="order-id"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        readonly />
+                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Copie este ID e cole no formulário de envio
+                        do comprovativo.</p>
+                </div>
                 <!-- Informações do Banco -->
                 <div
                     class="space-y-4 sm:space-y-2 rounded-lg border border-gray-100 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800 mb-6 md:mb-8">
@@ -117,7 +127,8 @@
                     </div>
                     <dl class="sm:flex items-center justify-between gap-4">
                         <dt class="font-normal mb-1 sm:mb-0 text-gray-500 dark:text-gray-400">Nome do Banco</dt>
-                        <dd id="bank-name" class="font-medium text-gray-900 dark:text-white sm:text-end">Selecione um banco</dd>
+                        <dd id="bank-name" class="font-medium text-gray-900 dark:text-white sm:text-end">Selecione um
+                            banco</dd>
                     </dl>
                     <dl class="sm:flex items-center justify-between gap-4">
                         <dt class="font-normal mb-1 sm:mb-0 text-gray-500 dark:text-gray-400">Nome do Titular da Conta
@@ -138,19 +149,12 @@
                 <p class="text-gray-500 dark:text-gray-400 mb-6">Por favor, faça o upload do comprovativo de depósito
                     após
                     realizar a transferência para que possamos processar seu pedido.</p>
-                <div class="mb-6">
-                    <label class="block text-gray-700 text-sm font-bold mb-2 dark:text-gray-400" for="comprovativo">
-                        Carregar Comprovativo de Depósito:
-                    </label>
-                    <input id="comprovativo" type="file" accept="image/*,.pdf"
-                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600">
-                </div>
 
                 <div class="flex items-center space-x-4">
-                    <a href="#"
+                    <a target="_blank" href="https://forms.gle/ywHEZwCPQJSWngFi8"
                         class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Enviar
                         Comprovativo</a>
-                    <a href="/"
+                    <a href="index.html"
                         class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Voltar
                         às Compras</a>
                 </div>
@@ -191,50 +195,65 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script>
         const bankData = {
-          BCA: {
-            name: 'BCA',
-            accountName: 'Herman Jorge Melo Gonçalves',
-            accountNumber: '123456789',
-            nibNumber: '000100100010123456789',
-          },
-          BCN: {
-            name: 'BCN',
-            accountName: 'Maria Fernandes',
-            accountNumber: '987654321',
-            nibNumber: '000200200020987654321',
-          },
-          CAIXA: {
-            name: 'CAIXA',
-            accountName: 'Carlos Sousa',
-            accountNumber: '112233445',
-            nibNumber: '000300300030112233445',
-          },
-          BAI: {
-            name: 'BAI',
-            accountName: 'Ana Costa',
-            accountNumber: '556677889',
-            nibNumber: '000400400040556677889',
-          },
+            BCA: {
+                name: 'BCA',
+                accountName: 'Herman Jorge Melo Gonçalves',
+                accountNumber: '123456789',
+                nibNumber: '000100100010123456789',
+            },
+            BCN: {
+                name: 'BCN',
+                accountName: 'Maria Fernandes',
+                accountNumber: '987654321',
+                nibNumber: '000200200020987654321',
+            },
+            CAIXA: {
+                name: 'CAIXA',
+                accountName: 'Carlos Sousa',
+                accountNumber: '112233445',
+                nibNumber: '000300300030112233445',
+            },
+            BAI: {
+                name: 'BAI',
+                accountName: 'Ana Costa',
+                accountNumber: '556677889',
+                nibNumber: '000400400040556677889',
+            },
         };
-    
+
         console.log(bankData)
-      
+
         function updateBankInfo() {
-          const selectedBank = document.getElementById('bank').value;
-          console.log(bankData)
-          if (selectedBank && bankData[selectedBank]) {
-            document.getElementById('bank-name').textContent = bankData[selectedBank].name;
-            document.getElementById('account-name').textContent = bankData[selectedBank].accountName;
-            document.getElementById('account-number').textContent = bankData[selectedBank].accountNumber;
-            document.getElementById('nib-number').textContent = bankData[selectedBank].nibNumber;
-          } else {
-            document.getElementById('bank-name').textContent = 'Selecione um banco';
-            document.getElementById('account-name').textContent = '-';
-            document.getElementById('account-number').textContent = '-';
-            document.getElementById('nib-number').textContent = '-';
-          }
+            const selectedBank = document.getElementById('bank').value;
+            console.log(bankData)
+            if (selectedBank && bankData[selectedBank]) {
+                document.getElementById('bank-name').textContent = bankData[selectedBank].name;
+                document.getElementById('account-name').textContent = bankData[selectedBank].accountName;
+                document.getElementById('account-number').textContent = bankData[selectedBank].accountNumber;
+                document.getElementById('nib-number').textContent = bankData[selectedBank].nibNumber;
+            } else {
+                document.getElementById('bank-name').textContent = 'Selecione um banco';
+                document.getElementById('account-name').textContent = '-';
+                document.getElementById('account-number').textContent = '-';
+                document.getElementById('nib-number').textContent = '-';
+            }
         }
-      </script>
+    </script>
+
+    <script>
+        // Função para gerar um ID de pedido único
+        function generateOrderId() {
+            const now = new Date();
+            const formattedDate = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}`;
+            const formattedTime = `${String(now.getHours()).padStart(2, '0')}${String(now.getMinutes()).padStart(2, '0')}`;
+            const randomNum = Math.floor(Math.random() * 1000);
+            const orderId = `#NETFLIX${formattedDate}${formattedTime}${randomNum}`;
+            document.getElementById('order-id').value = orderId; // Exibe o ID no campo
+        }
+
+        // Chama a função para gerar o ID assim que a página é carregada
+        window.onload = generateOrderId;
+    </script>
 </body>
 
 </html>
