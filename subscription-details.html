@@ -311,17 +311,21 @@
     <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script>
-        // Função para buscar os dados da API
         async function fetchSubscription() {
+            let url = "https://api.baserow.io/api/database/rows/table/363656/1/?user_field_names=true"
+            const token = "Token xYpF0ojwdjS7C2gMHotaHsPI3R4vN3kV"
             try {
-                const response = await fetch('https://sheetdb.io/api/v1/8723pupatyube');
-                const data = await response.json();
-                console.log(data)
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': token
+                    }
+                });
 
-                // Verifica se a assinatura está disponível
-                const subscription = data[0]; // Acessa a primeira assinatura
-
-                if (subscription.is_available === "1") {
+                // Verifica se o fetch foi bem-sucedido
+                if (response.ok) {
+                    const subscription = await response.json();
+                    if (subscription.is_available) {
                     document.getElementById('is_available').innerHTML = `
                     <a href="payment-confirmation.html"
                         class="inline-flex items-center rounded-lg bg-primary-500 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-600 focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
@@ -338,12 +342,14 @@
                 } else {
                     document.getElementById('is_available').innerHTML = `Sem estoque`;
                 }
+                } else {
+                    console.error("Failed to fetch data:", response.status);
+                }
             } catch (error) {
-                console.error('Erro ao buscar os dados:', error);
+                console.error("Error fetching data:", error);
             }
         }
 
-        // Chama a função ao carregar a página
         window.onload = fetchSubscription;
     </script>
 </body>
